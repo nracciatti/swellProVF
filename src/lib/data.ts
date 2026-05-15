@@ -88,7 +88,7 @@ export const products = [
       ["Vuelo", "28 min"],
       ["Controlador", "S5 GPS 9.0"],
       ["Cámara", "4K"],
-      ["App", "FDFly"],
+      ["Impermeable", "IP67"],
     ],
     highlights: [
       "Hasta 3,2 kg de capacidad de carnada.",
@@ -185,7 +185,7 @@ export const trustItems = [
   { icon: MapPin, label: "Representantes en Argentina" },
   { icon: Waves, label: "Diseñados para pesca en agua salada" },
   { icon: Plane, label: "Alcance de hasta 1,5 km" },
-  { icon: Zap, label: "Compra online en Tienda Nube" },
+  { icon: Zap, label: "Compra online en Tienda Oficial" },
   { icon: CheckCircle2, label: "Soporte y contacto local" },
   { icon: Gauge, label: "Probados para costa, playa y surfcasting" },
 ];
