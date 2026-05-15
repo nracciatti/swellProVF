@@ -37,14 +37,14 @@ export function Hero() {
       <div className="absolute left-[-120px] top-24 h-[360px] w-[360px] rounded-full bg-orange-200/30 blur-3xl" />
       <div className="absolute right-[-120px] bottom-10 h-[340px] w-[340px] rounded-full bg-stone-300/35 blur-3xl" />
 
-      <div className="container-page relative grid min-h-[calc(100vh-96px)] items-center gap-10 py-14 lg:grid-cols-[.88fr_1.12fr] lg:gap-14">
+      <div className="container-page relative grid min-h-[calc(100vh-96px)] items-center gap-10 py-12 lg:grid-cols-[.88fr_1.12fr] lg:gap-14 lg:py-10">
         <div className="max-w-2xl">
           <Reveal>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-black/10 bg-white/80 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-[var(--dark)] backdrop-blur">
               <ShieldCheck size={16} className="text-[var(--brand)]" />{" "}
               Representantes oficiales en Argentina
             </div>
-            <h1 className="text-balance text-5xl font-black leading-[0.95] tracking-tight md:text-6xl lg:text-7xl xl:text-[6rem]">
+            <h1 className="text-balance text-5xl font-black leading-[0.95] tracking-tight md:text-[3.6rem] lg:text-[4.6rem] xl:text-[5.25rem]">
               Drones de pesca para llegar más lejos.
             </h1>
             <p className="mt-6 max-w-xl text-lg leading-8 text-[var(--muted)] md:text-xl">
@@ -90,7 +90,7 @@ export function Hero() {
           </Reveal>
         </div>
 
-        <Reveal delay={0.18} className="relative">
+        <Reveal delay={0.18} className="relative lg:max-w-[760px] lg:-translate-y-4 lg:justify-self-end xl:max-w-[820px] xl:-translate-y-6">
           <div className="absolute -inset-8 rounded-full bg-[var(--brand)]/10 blur-3xl" />
           <div className="relative overflow-hidden rounded-[2.9rem] border border-white/40 bg-white/45 p-3 shadow-[0_30px_90px_rgba(17,19,21,.12)] backdrop-blur-xl md:p-4 lg:p-5">
             <Link
@@ -99,7 +99,7 @@ export function Hero() {
               aria-label={`Ver ${current.name}`}
             />
 
-            <div className="relative overflow-hidden rounded-[2.1rem] bg-[#121315] min-h-[330px] md:min-h-[380px]">
+            <div className="relative overflow-hidden rounded-[2.1rem] bg-[#121315] min-h-[310px] md:min-h-[350px] lg:min-h-[360px]">
               <Image
                 src="/assets/images/fishermandronesurfcastingonbeach-1681203076907.webp"
                 alt="Drone de pesca en la costa"
@@ -113,7 +113,7 @@ export function Hero() {
               {showVideo && (
                 <video
                   className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-700 ${
-                    videoReady ? "opacity-70" : "opacity-0"
+                    videoReady ? "opacity-80" : "opacity-0"
                   }`}
                   autoPlay
                   muted
@@ -128,7 +128,7 @@ export function Hero() {
                   />
                 </video>
               )}
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(255,122,26,.30),transparent_24%),linear-gradient(180deg,rgba(10,10,11,.16),rgba(10,10,11,.56))]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_18%,rgba(255,122,26,.30),transparent_24%),linear-gradient(180deg,rgba(10,10,11,.12),rgba(10,10,11,.46))]" />
 
               <div className="absolute left-6 top-6 z-20 rounded-full border border-white/15 bg-black/28 px-4 py-2 text-[11px] font-black uppercase tracking-[0.20em] text-white backdrop-blur-md">
                 {labels[active]}
@@ -143,7 +143,7 @@ export function Hero() {
                   width={1100}
                   height={760}
                   priority
-                  className="hero-drone-swap animate-float relative z-10 h-auto w-full max-w-[840px] object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,.45)]"
+                  className="hero-drone-swap animate-float relative z-10 h-auto w-full max-w-[760px] object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,.45)] xl:max-w-[800px]"
                 />
               </div>
             </div>
@@ -157,10 +157,10 @@ export function Hero() {
                   <span className="text-[10px] font-black uppercase tracking-[0.22em] text-orange-200">
                     Modelo destacado
                   </span>
-                  <h2 className="mt-2 text-3xl font-black tracking-tight md:text-[2.35rem]">
+                  <h2 className="mt-2 text-3xl font-black tracking-tight text-white md:text-[2.35rem]">
                     {current.name}
                   </h2>
-                  <p className="mt-1 max-w-xl text-sm font-medium leading-6 text-white/78 md:text-base">
+                  <p className="mt-1 max-w-xl text-sm font-medium leading-6 text-white/90 md:text-base">
                     {current.tagline}
                   </p>
                 </div>
