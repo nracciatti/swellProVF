@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 import { ArrowRight } from "lucide-react";
 
 const rows = ["Ideal para", "Carnada", "Alcance", "Vuelo", "Cámara", "Impermeable"];
-const ideal = ["Empezar con respaldo", "Máxima capacidad", "Premium 4K"];
+const ideal = ["Empezar con respaldo", "Carga + cámara 4K", "Premium 4K"];
 
 function value(product: typeof products[number], row: string, index: number) {
   if (row === "Ideal para") return ideal[index];

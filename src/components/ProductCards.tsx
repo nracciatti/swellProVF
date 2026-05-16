@@ -6,8 +6,8 @@ import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 import { CheckCircle2, ShoppingBag } from "lucide-react";
 
-const labels = ["Ideal para empezar", "Más capacidad", "Premium 4K"];
-const focus = ["Principiante pro", "Carnada pesada", "Cámara y GPS"];
+const labels = ["Ideal para empezar", "Carga + 4K", "Premium 4K"];
+const focus = ["Principiante pro", "Carga y cámara 4K", "Cámara y GPS"];
 
 export function ProductCards() {
   return (

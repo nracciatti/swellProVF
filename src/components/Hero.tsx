@@ -9,7 +9,7 @@ import { Reveal } from "./Reveal";
 import { Camera, Compass, Droplets, ShieldCheck } from "lucide-react";
 
 const heroProducts = [products[0], products[1], products[2]];
-const labels = ["Ideal para empezar", "Máxima capacidad", "Premium 4K"];
+const labels = ["Ideal para empezar", "Carga + cámara 4K", "Premium 4K"];
 
 export function Hero() {
   const whatsapp = `https://wa.me/${brand.phoneRaw}?text=${encodeURIComponent(
@@ -99,7 +99,7 @@ export function Hero() {
               aria-label={`Ver ${current.name}`}
             />
 
-            <div className="relative overflow-hidden rounded-[2.1rem] bg-[#121315] min-h-[310px] md:min-h-[350px] lg:min-h-[360px]">
+            <div className="relative h-[310px] overflow-hidden rounded-[2.1rem] bg-[#121315] md:h-[350px] lg:h-[360px]">
               <Image
                 src="/assets/images/fishermandronesurfcastingonbeach-1681203076907.webp"
                 alt="Drone de pesca en la costa"
@@ -136,19 +136,21 @@ export function Hero() {
 
               <div className="pointer-events-none absolute inset-x-10 bottom-10 h-16 rounded-full bg-[var(--brand)]/26 blur-3xl" />
               <div className="absolute inset-0 flex items-center justify-center px-8 pb-6 pt-12 md:px-12 lg:px-14">
-                <Image
-                  key={current.slug}
-                  src={current.image}
-                  alt={current.name}
-                  width={1100}
-                  height={760}
-                  priority
-                  className="hero-drone-swap animate-float relative z-10 h-auto w-full max-w-[760px] object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,.45)] xl:max-w-[800px]"
-                />
+                <div className="hero-drone-swap relative z-10 h-full w-full max-w-[760px] xl:max-w-[800px]">
+                  <Image
+                    key={current.slug}
+                    src={current.image}
+                    alt={current.name}
+                    fill
+                    priority
+                    sizes="(min-width: 1280px) 800px, (min-width: 1024px) 760px, 100vw"
+                    className="object-contain drop-shadow-[0_35px_70px_rgba(0,0,0,.45)]"
+                  />
+                </div>
               </div>
             </div>
 
-            <div className="relative z-20 mt-3 rounded-[2rem] border border-black/6 bg-[linear-gradient(180deg,rgba(18,19,21,.92),rgba(25,26,28,.98))] px-5 py-5 text-white shadow-[0_18px_40px_rgba(17,19,21,.18)] md:px-6 md:py-6">
+            <div className="relative z-20 mt-3 min-h-[225px] rounded-[2rem] border border-black/6 bg-[linear-gradient(180deg,rgba(18,19,21,.92),rgba(25,26,28,.98))] px-5 py-5 text-white shadow-[0_18px_40px_rgba(17,19,21,.18)] md:h-[206px] md:px-6 md:py-6">
               <div
                 key={current.slug}
                 className="hero-copy-swap flex flex-col gap-4 md:flex-row md:items-end md:justify-between"
@@ -160,16 +162,17 @@ export function Hero() {
                   <h2 className="mt-2 text-3xl font-black tracking-tight text-white md:text-[2.35rem]">
                     {current.name}
                   </h2>
-                  <p className="mt-1 max-w-xl text-sm font-medium leading-6 text-white/90 md:text-base">
+                  <p className="mt-1 min-h-12 max-w-xl text-sm font-medium leading-6 text-white/90 md:text-base">
                     {current.tagline}
                   </p>
                 </div>
               </div>
 
-              <div className="mt-4 flex flex-wrap gap-2">
+              <div className="relative z-30 mt-4 flex flex-wrap gap-2">
                 {heroProducts.map((product, index) => (
                   <button
                     key={product.slug}
+                    type="button"
                     onClick={(e) => {
                       e.preventDefault();
                       setActive(index);

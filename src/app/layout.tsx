@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | SwellPro Argentina",
   },
   description:
-    "Drones de pesca SwellPro en Argentina. Modelos Fisherman FD1S, Fisherman Max FD2 y Fisherman FD3 con resistencia al agua, GPS y soporte local.",
+    "Drones de pesca SwellPro en Argentina. Modelos Fisherman FD1S, Fisherman Max FD2 con cámara 4K y Fisherman FD3 con resistencia al agua, GPS y soporte local.",
   keywords: ["drone pesca", "drone para pescar", "SwellPro Argentina", "Fisherman FD3", "Fisherman FD1S", "Fisherman Max FD2"],
   icons: {
     icon: "/assets/images/logoPagina.png",

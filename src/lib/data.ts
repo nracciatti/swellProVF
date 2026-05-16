@@ -10,7 +10,6 @@ export const brand = {
 };
 
 export const navItems = [
-  { label: "Productos", href: "/#productos" },
   { label: "Beneficios", href: "/#beneficios" },
   { label: "Cómo funciona", href: "/#como-funciona" },
   { label: "Comparativa", href: "/#comparativa" },
@@ -69,9 +68,9 @@ export const products = [
   {
     slug: "fisherman-fd2-max",
     name: "Fisherman Max FD2",
-    eyebrow: "Máxima capacidad",
+    eyebrow: "Carga + cámara 4K",
     shortUse: "Para llevar más carnada y aprovechar cámara 4K.",
-    tagline: "Máxima capacidad para jornadas intensivas de pesca.",
+    tagline: "Máxima carga con cámara 4K.",
     description:
       "El modelo ideal para quienes buscan transportar más carnada, trabajar con cámara 4K y aprovechar funciones avanzadas de vuelo.",
     image: "/assets/images/fishermanfd2.png",
@@ -83,7 +82,7 @@ export const products = [
     ],
     buyUrl: "https://shop-swellpro.com/",
     specs: [
-      ["Carnada", "3,2 kg"],
+      ["Carnada", "3,5 kg"],
       ["Alcance", "1,5 km"],
       ["Vuelo", "28 min"],
       ["Controlador", "S5 GPS 9.0"],
@@ -91,15 +90,15 @@ export const products = [
       ["Impermeable", "IP67"],
     ],
     highlights: [
-      "Hasta 3,2 kg de capacidad de carnada.",
+      "Hasta 3,5 kg de capacidad de carnada con cámara 4K integrada.",
       "Cámara 4K estabilizada para interpretar playa, canales y cardúmenes.",
       "Pantalla multicolor integrada en el control remoto.",
       "Funciones automáticas con FDFly App.",
     ],
     sections: [
       {
-        title: "Más carnada, más posibilidades",
-        text: "Fisherman Max está pensado para transportar carnadas pesadas a largas distancias, reduciendo tiempos frente a métodos tradicionales.",
+        title: "Más carnada y visión 4K",
+        text: "Fisherman Max está pensado para transportar carnadas pesadas a largas distancias y usar su cámara 4K para evaluar mejor dónde realizar cada lanzamiento.",
         image: "/assets/images/fishermanfd2-fisherman-max-drone-with-bait-baits.jpg",
       },
       {
@@ -192,10 +191,14 @@ export const trustItems = [
 
 
 export const faqs = [
-  { question: "¿Puedo usarlo en agua salada?", answer: "Sí. Los modelos Fisherman están diseñados para operar cerca del mar. Según el modelo, cuentan con estructura impermeable, flotación y protección para ambientes costeros." },
-  { question: "¿Necesito saber volar drones?", answer: "No necesitás ser experto. La línea incluye funciones como GPS, retorno automático y asistencia de vuelo. Igual recomendamos una explicación inicial antes del primer uso." },
-  { question: "¿Cómo se realiza la compra?", answer: "Las fichas de producto incluyen acceso a la tienda online, donde se gestionan precio, stock, medios de pago y pedido. También se puede consultar por WhatsApp." },
-  { question: "¿Cuál modelo me conviene?", answer: "FD1S es ideal para empezar, FD2 Max para máxima capacidad y FD3 para quienes buscan cámara 4K, tecnología y equilibrio premium." },
+  { question: "¿Hacen envíos a todo el país?", answer: "Sí. Realizamos envíos a todo el país por Andreani y Vía Cargo, coordinando la opción más conveniente según la zona y el producto." },
+  { question: "¿Cómo se realiza la compra?", answer: "Podés cerrar la compra por WhatsApp con asesoramiento personalizado o realizarla directamente a través de la tienda online oficial." },
+  { question: "¿Necesito saber volar drones?", answer: "No es necesario tener experiencia previa. En la entrega se explica el uso paso a paso y se comparten recomendaciones de buenas prácticas para operar el drone con seguridad." },
+  { question: "¿Cuánto dura cada batería?", answer: "Cada batería tiene una autonomía aproximada de 25 minutos. En uso de pesca, equivale normalmente a entre 8 y 10 lanzadas a 250 metros, sin utilizar la función de vuelta a casa." },
+  { question: "Si se cae al agua, ¿qué pasa?", answer: "Los drones flotan y están preparados para operar en agua salada. Además, cuentan con sistema de auto volteo para minimizar riesgos y facilitar la recuperación." },
+  { question: "¿Cuál modelo me conviene?", answer: "Si lo querés exclusivamente para pescar, recomendamos el FD1S. Si buscás cámara 4K con un equipo equilibrado, el FD3 es una gran opción. Si además necesitás mayor capacidad de carga, el FD2 también incluye cámara 4K y permite levantar más peso." },
+  { question: "¿Cuentan con garantía?", answer: "Sí. Los drones cuentan con un año de garantía por fallas de fábrica." },
+  { question: "¿Tienen servicio técnico?", answer: "Sí. Contamos con servicio técnico oficial de SwellPro en Argentina, repuestos originales y pruebas de vacío para que tu drone quede en condiciones óptimas." },
 ];
 
 export const useCases = [

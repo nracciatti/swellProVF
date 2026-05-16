@@ -6,7 +6,7 @@ import { ArrowRight, Camera, HelpCircle, PackageCheck, Waves } from "lucide-reac
 
 const options = [
   { title: "Quiero empezar bien", text: "Busco un drone resistente, seguro y fácil para empezar desde costa.", product: products[0], icon: Waves },
-  { title: "Quiero llevar más carnada", text: "Necesito máxima capacidad para jornadas más exigentes.", product: products[1], icon: PackageCheck },
+  { title: "Quiero carga y cámara 4K", text: "Necesito máxima capacidad para jornadas exigentes, sin resignar cámara 4K.", product: products[1], icon: PackageCheck },
   { title: "Quiero cámara 4K", text: "Prefiero tecnología premium para ver playa, canales y zonas de actividad.", product: products[2], icon: Camera },
 ];
 
@@ -22,7 +22,7 @@ export function ModelSelector() {
             <h2 className="text-balance text-4xl font-black tracking-tight md:text-6xl">¿Cuál te conviene?</h2>
           </Reveal>
           <Reveal delay={0.08}>
-            <p className="max-w-2xl text-lg leading-8 text-[var(--muted)]">Elegí según tu necesidad real: empezar con seguridad, transportar más carnada o priorizar cámara, GPS y funciones avanzadas.</p>
+            <p className="max-w-2xl text-lg leading-8 text-[var(--muted)]">Elegí según tu necesidad real: empezar con seguridad, transportar más carnada con cámara 4K o priorizar equilibrio, GPS y funciones avanzadas.</p>
           </Reveal>
         </div>
 
