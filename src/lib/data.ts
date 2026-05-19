@@ -5,7 +5,7 @@ export const brand = {
   phoneDisplay: "+54 11 6133-2326",
   phoneRaw: "5491161332326",
   email: "ventas@swellpro.com.ar",
-  shopUrl: "https://shop-swellpro.com/",
+  shopUrl: "https://swellproargentina.mitiendanube.com/",
   whatsappMessage: "Hola, quiero consultar por los drones de pesca SwellPro.",
 };
 
@@ -32,7 +32,7 @@ export const products = [
       "/assets/images/abajo45grados.png",
       "/assets/images/arriba1.png",
     ],
-    buyUrl: "https://shop-swellpro.com/",
+    buyUrl: "https://swellproargentina.mitiendanube.com/productos/swellpro-fisherman-fd1s/",
     specs: [
       ["Carnada", "2,2 kg"],
       ["Alcance", "1,3 km"],
@@ -80,7 +80,7 @@ export const products = [
       "/assets/images/fishermanfd2-waterproof-fishing-drone-float-in-water.webp",
       "/assets/images/fishermanfd2-control-render.png",
     ],
-    buyUrl: "https://shop-swellpro.com/",
+    buyUrl: "https://swellproargentina.mitiendanube.com/productos/swellpro-fisherman-max-fd2/",
     specs: [
       ["Carnada", "3,5 kg"],
       ["Alcance", "1,5 km"],
@@ -128,7 +128,7 @@ export const products = [
       "/assets/images/fishermanfd3-fd3-drone-floating-in-water.webp",
       "/assets/images/fishermanfd3-wind-proof.webp",
     ],
-    buyUrl: "https://shop-swellpro.com/",
+    buyUrl: "https://swellproargentina.mitiendanube.com/productos/swellpro-fisherman-fd3/",
     specs: [
       ["Carnada", "2 kg"],
       ["Alcance", "1,3 km"],
