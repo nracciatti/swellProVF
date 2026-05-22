@@ -58,21 +58,33 @@ export function Navbar() {
               </div>
               <div className="grid gap-3">
                 {products.map((p) => (
-                  <Link key={p.slug} href={`/productos/${p.slug}`} className="group/item grid grid-cols-[94px_1fr] items-center gap-4 rounded-[1.4rem] border border-black/6 bg-[#fcfaf6] p-3 transition hover:border-orange-500/35 hover:bg-white">
-                    <div className="relative h-20 overflow-hidden rounded-[1rem] product-media-bg">
+                  <div key={p.slug} className="group/item grid grid-cols-[94px_1fr] items-center gap-4 rounded-[1.4rem] border border-black/6 bg-[#fcfaf6] p-3 transition hover:border-orange-500/35 hover:bg-white">
+                    <Link href={`/productos/${p.slug}`} className="relative h-20 overflow-hidden rounded-[1rem] product-media-bg" aria-label={`Ver modelo ${p.name}`}>
                       <Image src={p.image} alt={p.name} fill sizes="94px" className="object-contain p-3 transition duration-300 group-hover/item:scale-110" />
-                    </div>
-                    <div>
-                      <div className="flex items-center justify-between gap-3">
-                        <strong className="block text-base font-black text-[var(--fg)]">{p.name}</strong>
-                        <span className="rounded-full bg-[var(--brand)] px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">Ficha</span>
+                    </Link>
+                    <div className="min-w-0">
+                      <div className="flex items-start justify-between gap-3">
+                        <div className="min-w-0">
+                          <Link href={`/productos/${p.slug}`} className="block text-base font-black text-[var(--fg)] transition hover:text-[var(--brand)]">
+                            {p.name}
+                          </Link>
+                          <p className="mt-1 text-sm font-semibold leading-5 text-[var(--muted)]">{p.shortUse}</p>
+                        </div>
+                        <span className="shrink-0 rounded-full bg-[var(--brand)] px-3 py-1 text-[10px] font-black uppercase tracking-widest text-white">Ficha</span>
                       </div>
-                      <p className="mt-1 text-sm font-semibold leading-5 text-[var(--muted)]">{p.shortUse}</p>
                       <div className="mt-2 flex flex-wrap gap-2 text-[11px] font-black uppercase tracking-wider text-[var(--muted)]">
                         {p.specs.slice(0, 3).map(([label, value]) => <span key={label}>{label}: {value}</span>)}
                       </div>
+                      <div className="mt-3 flex flex-wrap items-center gap-2">
+                        <Link href={`/productos/${p.slug}`} className="rounded-full border border-black/10 px-4 py-2 text-xs font-black uppercase tracking-wider text-[var(--dark)] transition hover:border-orange-500/35 hover:bg-orange-50 hover:text-[var(--brand)]">
+                          Ver modelo
+                        </Link>
+                        <Link href={p.buyUrl} className="rounded-full bg-[var(--brand)] px-4 py-2 text-xs font-black uppercase tracking-wider text-white shadow-[0_10px_22px_rgba(255,91,24,.22)] transition hover:bg-[#e84f14]">
+                          Comprar
+                        </Link>
+                      </div>
                     </div>
-                  </Link>
+                  </div>
                 ))}
               </div>
             </div>
@@ -101,10 +113,27 @@ export function Navbar() {
             </Link>
             <div className="grid gap-3 py-2">
               {products.map((p) => (
-                <Link key={p.slug} onClick={() => setOpen(false)} href={`/productos/${p.slug}`} className="grid grid-cols-[70px_1fr] items-center gap-3 rounded-2xl bg-white p-3 text-[var(--dark)] shadow-sm">
-                  <div className="relative h-16 rounded-xl product-media-bg"><Image src={p.image} alt={p.name} fill sizes="70px" className="object-contain p-2" /></div>
-                  <div><strong className="block text-sm">{p.name}</strong><span className="text-xs text-[var(--muted)]">{p.eyebrow}</span></div>
-                </Link>
+                <div key={p.slug} className="rounded-2xl bg-white p-3 text-[var(--dark)] shadow-sm">
+                  <div className="grid grid-cols-[70px_1fr] items-center gap-3">
+                    <Link onClick={() => setOpen(false)} href={`/productos/${p.slug}`} className="relative h-16 rounded-xl product-media-bg" aria-label={`Ver modelo ${p.name}`}>
+                      <Image src={p.image} alt={p.name} fill sizes="70px" className="object-contain p-2" />
+                    </Link>
+                    <div className="min-w-0">
+                      <Link onClick={() => setOpen(false)} href={`/productos/${p.slug}`} className="block text-sm font-black transition hover:text-[var(--brand)]">
+                        {p.name}
+                      </Link>
+                      <span className="text-xs text-[var(--muted)]">{p.eyebrow}</span>
+                    </div>
+                  </div>
+                  <div className="mt-3 grid grid-cols-2 gap-2">
+                    <Link onClick={() => setOpen(false)} href={`/productos/${p.slug}`} className="rounded-full border border-black/10 px-3 py-2 text-center text-xs font-black uppercase tracking-wider text-[var(--dark)]">
+                      Ver modelo
+                    </Link>
+                    <Link onClick={() => setOpen(false)} href={p.buyUrl} className="rounded-full bg-[var(--brand)] px-3 py-2 text-center text-xs font-black uppercase tracking-wider text-white">
+                      Comprar
+                    </Link>
+                  </div>
+                </div>
               ))}
             </div>
             <ButtonLink href={brand.shopUrl}>Comprar online</ButtonLink>
