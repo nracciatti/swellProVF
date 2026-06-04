@@ -61,16 +61,15 @@ Cuando tengas los links finales de Tienda Nube/productos, reemplazalos en `src/l
 
 ## Tracking
 
-El Meta Pixel está en:
+El tracking de Meta y Google está en:
 
 ```bash
 src/components/Tracking.tsx
 ```
 
-Usé el Pixel ID que venía en la web vieja:
+IDs instalados:
 
 ```bash
-546426051134354
+Meta Pixel: 546426051134354
+Google Tag: G-953TJJRJ6G
 ```
-
-Si el cliente usa otro, cambiarlo ahí.

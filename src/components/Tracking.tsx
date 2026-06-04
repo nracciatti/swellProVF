@@ -1,10 +1,24 @@
 import Script from "next/script";
 
 const META_PIXEL_ID = "546426051134354";
+const GOOGLE_TAG_ID = "G-953TJJRJ6G";
 
 export function Tracking() {
   return (
     <>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-tag" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GOOGLE_TAG_ID}');
+        `}
+      </Script>
+
       <Script id="meta-pixel" strategy="afterInteractive">
         {`
           !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
