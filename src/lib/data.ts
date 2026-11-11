@@ -197,7 +197,7 @@ export const faqs = [
   { question: "¿Cuánto dura cada batería?", answer: "Cada batería tiene una autonomía aproximada de 25 minutos. En uso de pesca, equivale normalmente a entre 8 y 10 lanzadas a 250 metros, sin utilizar la función de vuelta a casa." },
   { question: "Si se cae al agua, ¿qué pasa?", answer: "Los drones flotan y están preparados para operar en agua salada. Además, cuentan con sistema de auto volteo para minimizar riesgos y facilitar la recuperación." },
   { question: "¿Cuál modelo me conviene?", answer: "Si lo querés exclusivamente para pescar, recomendamos el FD1S. Si buscás cámara 4K con un equipo equilibrado, el FD3 es una gran opción. Si además necesitás mayor capacidad de carga, el FD2 también incluye cámara 4K y permite levantar más peso." },
-  { question: "¿Cuentan con garantía?", answer: "Sí. Los drones cuentan con un año de garantía por fallas de fábrica." },
+  { question: "¿Cuentan con garantía?", answer: "Sí. La garantía oficial SwellPro cubre defectos de fabricación según el componente: 12 meses para los componentes principales y 6 meses o 200 ciclos de carga para la batería. Hélices y sus soportes, carcasa y tren de aterrizaje no tienen cobertura dentro de esta garantía. Consultá las condiciones completas en el enlace «Garantía oficial SwellPro» al pie de esta página." },
   { question: "¿Tienen servicio técnico?", answer: "Sí. Contamos con servicio técnico oficial de SwellPro en Argentina, repuestos originales y pruebas de vacío para que tu drone quede en condiciones óptimas." },
 ];
 

@@ -12,6 +12,7 @@ export function Footer() {
         </div>
         <div className="grid gap-2 text-sm text-white/70 md:text-right">
           {products.map((p) => <Link key={p.slug} href={`/productos/${p.slug}`} className="hover:text-[var(--brand)]">{p.name}</Link>)}
+          <a href="https://store.swellpro.com/en-ar/pages/warranty-policy" target="_blank" rel="noopener noreferrer" className="hover:text-[var(--brand)]">Garantía oficial SwellPro</a>
           <a href={`mailto:${brand.email}`} className="hover:text-[var(--brand)]">{brand.email}</a>
         </div>
       </div>
