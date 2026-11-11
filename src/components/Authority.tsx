@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 
 const items = [
   { icon: BadgeCheck, title: "Representantes oficiales", text: "Presencia local para consultas sobre modelos Fisherman en Argentina." },
-  { icon: ShieldCheck, title: "Garantía oficial SwellPro", text: "Cobertura por defectos de fabricación, con plazos y condiciones según el componente. Consultá la política oficial al pie de la página." },
+  { icon: ShieldCheck, title: "Garantía oficial SwellPro", text: "Cobertura por defectos de fabricación, con plazos y condiciones según el componente." },
   { icon: Wrench, title: "Soporte técnico", text: "Orientación sobre puesta en marcha, uso básico y recomendaciones de operación." },
   { icon: Headphones, title: "Asesoramiento real", text: "Orientación según tipo de pesca, zona de uso y características requeridas." },
   { icon: Truck, title: "Compra online", text: "Acceso a tienda online para consultar disponibilidad, precio y opciones de compra." },
